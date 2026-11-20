@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071522">
+  <title>Poseidón · Control portuario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Poseidón, inicio">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 24c5-5 10 5 15 0s10 5 15 0M5 31c5-5 10 5 15 0s10 5 15 0M20 5v12m-5 0 5-7 5 7"/></svg></span>
+        <span><strong>POSEIDÓN</strong><small>OPERACIONES PORTUARIAS</small></span>
+      </a>
+      <div class="topbar-right"><span class="system-dot"></span><span>Panel local</span><span class="top-separator"></span><span id="clock">--:--:--</span></div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy"><p class="eyebrow">CENTRO DE OPERACIONES <span>·</span> MUELLE PRINCIPAL</p><h1>Control de<br><em>iluminación</em></h1><p class="hero-note">Gestión de torres y servicios auxiliares del puerto.</p></div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="port-tower tower-one"><div class="mast"></div><div class="ladder"></div><div class="cage"><i></i><i></i><i></i><b></b></div><div class="head"><span></span><span></span><span></span><span></span></div></div>
+          <div class="port-tower tower-two"><div class="mast"></div><div class="ladder"></div><div class="cage"><i></i><i></i><i></i><b></b></div><div class="head"><span></span><span></span><span></span><span></span></div></div>
+          <div class="port-tower tower-three"><div class="mast"></div><div class="ladder"></div><div class="cage"><i></i><i></i><i></i><b></b></div><div class="head"><span></span><span></span><span></span><span></span></div></div>
+          <div class="port-tower tower-four"><div class="mast"></div><div class="ladder"></div><div class="cage"><i></i><i></i><i></i><b></b></div><div class="head"><span></span><span></span><span></span><span></span></div></div>
+          <div class="waterline"></div><div class="horizon"></div>
+        </div>
+        <div class="hero-meta"><span><b>06</b> PUNTOS DE CONTROL</span><span class="meta-divider"></span><span>ACCESO AUTORIZADO</span></div>
+      </section>
+
+      <section class="section-block" aria-labelledby="lighting-title">
+        <div class="section-heading"><div><p class="eyebrow">ILUMINACIÓN EXTERIOR</p><h2 id="lighting-title">Torres de iluminación</h2></div><span class="section-count">01 <i>/</i> 04</span></div>
+        <div class="tower-grid">
+          <article class="control-card"><div class="card-top"><span class="index">TORRE 01</span><span class="tower-icon" aria-hidden="true">✳</span></div><h3>Torre 1</h3><p class="location">PORTÓN PRINCIPAL</p><div class="card-bottom"><span class="ready"><i></i> Lista para operar</span><span class="card-number">01</span></div><form action="http://127.0.0.1:8000" method="POST" class="control-form"><label class="sr-only" for="pass1">Contraseña de acceso para Torre 1</label><input id="pass1" type="password" name="password" placeholder="Contraseña de acceso" autocomplete="current-password" required><button class="power on" type="submit" name="command11" value="ON"><span class="power-symbol">⏻</span> Encender</button><button class="power off" type="submit" name="command10" value="OFF"><span class="power-symbol">⏻</span> Apagar</button></form></article>
+          <article class="control-card"><div class="card-top"><span class="index">TORRE 02</span><span class="tower-icon" aria-hidden="true">✳</span></div><h3>Torre 2</h3><p class="location">MUELLE ESTE</p><div class="card-bottom"><span class="ready"><i></i> Lista para operar</span><span class="card-number">02</span></div><form action="http://127.0.0.1:8000" method="POST" class="control-form"><label class="sr-only" for="pass2">Contraseña de acceso para Torre 2</label><input id="pass2" type="password" name="password" placeholder="Contraseña de acceso" autocomplete="current-password" required><button class="power on" type="submit" name="command21" value="ON"><span class="power-symbol">⏻</span> Encender</button><button class="power off" type="submit" name="command20" value="OFF"><span class="power-symbol">⏻</span> Apagar</button></form></article>
+          <article class="control-card"><div class="card-top"><span class="index">TORRE 03</span><span class="tower-icon" aria-hidden="true">✳</span></div><h3>Torre 3</h3><p class="location">SECTOR DE CONTENEDORES</p><div class="card-bottom"><span class="ready"><i></i> Lista para operar</span><span class="card-number">03</span></div><form action="http://127.0.0.1:8000" method="POST" class="control-form"><label class="sr-only" for="pass3">Contraseña de acceso para Torre 3</label><input id="pass3" type="password" name="password" placeholder="Contraseña de acceso" autocomplete="current-password" required><button class="power on" type="submit" name="command31" value="ON"><span class="power-symbol">⏻</span> Encender</button><button class="power off" type="submit" name="command30" value="OFF"><span class="power-symbol">⏻</span> Apagar</button></form></article>
+          <article class="control-card"><div class="card-top"><span class="index">TORRE 04</span><span class="tower-icon" aria-hidden="true">✳</span></div><h3>Torre 4</h3><p class="location">PLAYA DE MANIOBRAS</p><div class="card-bottom"><span class="ready"><i></i> Lista para operar</span><span class="card-number">04</span></div><form action="http://127.0.0.1:8000" method="POST" class="control-form"><label class="sr-only" for="pass4">Contraseña de acceso para Torre 4</label><input id="pass4" type="password" name="password" placeholder="Contraseña de acceso" autocomplete="current-password" required><button class="power on" type="submit" name="command41" value="ON"><span class="power-symbol">⏻</span> Encender</button><button class="power off" type="submit" name="command40" value="OFF"><span class="power-symbol">⏻</span> Apagar</button></form></article>
+        </div>
+      </section>
+
+      <section class="section-block utilities" aria-labelledby="services-title">
+        <div class="section-heading"><div><p class="eyebrow">SISTEMAS AUXILIARES</p><h2 id="services-title">Bombas de agua</h2></div><span class="section-count">02 <i>/</i> 02</span></div>
+        <div class="pump-grid">
+          <article class="pump-card"><div class="pump-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 38h38M10 35v3m28-3v3M8 15h12v11H8zM20 18h5v5h-5m0-2h4m-8 5v3m0 0a8 8 0 1 0 16 0 8 8 0 0 0-16 0Zm16 0h5v-7h5v-5h-7m-19 4H6v-5h7m18 22h7v-5h4"/><path class="pump-accent" d="M11 18h6m5 13a5 5 0 0 0 8-4m5-11h4"/></svg></div><div class="pump-info"><span class="index">SERVICIO 01</span><h3>Tanque de agua</h3><p>Abastecimiento de reserva</p></div><form action="http://127.0.0.1:8000" method="POST" class="pump-form"><label class="sr-only" for="pass5">Contraseña de acceso para tanque de agua</label><input id="pass5" type="password" name="password" placeholder="Contraseña" autocomplete="current-password" required><button class="power on" type="submit" name="command51" value="ON">Encender</button><button class="power off" type="submit" name="command50" value="OFF">Apagar</button></form></article>
+          <article class="pump-card"><div class="pump-symbol" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 38h38M10 35v3m28-3v3M8 15h12v11H8zM20 18h5v5h-5m0-2h4m-8 5v3m0 0a8 8 0 1 0 16 0 8 8 0 0 0-16 0Zm16 0h5v-7h5v-5h-7m-19 4H6v-5h7m18 22h7v-5h4"/><path class="pump-accent" d="M11 18h6m5 13a5 5 0 0 0 8-4m5-11h4"/></svg></div><div class="pump-info"><span class="index">SERVICIO 02</span><h3>Agua a barco</h3><p>Suministro a embarcaciones</p></div><form action="http://127.0.0.1:8000" method="POST" class="pump-form"><label class="sr-only" for="pass6">Contraseña de acceso para agua a barco</label><input id="pass6" type="password" name="password" placeholder="Contraseña" autocomplete="current-password" required><button class="power on" type="submit" name="command61" value="ON">Encender</button><button class="power off" type="submit" name="command60" value="OFF">Apagar</button></form></article>
+        </div>
+      </section>
+      <footer><span>POSEIDÓN <i>·</i> SISTEMA DE CONTROL</span><span>Las órdenes se envían directamente a los controladores locales.</span></footer>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script>
+    const clock = document.getElementById('clock');
+    function updateClock() { clock.textContent = new Intl.DateTimeFormat('es-AR', {hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:false}).format(new Date()); }
+    updateClock(); setInterval(updateClock, 1000);
+    const towerArt = ['.tower-one', '.tower-two', '.tower-three', '.tower-four'].map(selector => document.querySelector(selector));
+    const towerCards = [...document.querySelectorAll('.control-card')];
+    function paintTowerStates(states) {
+      Object.entries(states || {}).forEach(([number, isOn]) => {
+        const index = Number(number) - 1;
+        if (index < 0 || index > 3) return;
+        towerArt[index]?.classList.toggle('is-on', Boolean(isOn));
+        const status = towerCards[index]?.querySelector('.ready');
+        if (status) {
+          status.classList.toggle('is-on', Boolean(isOn));
+          status.lastChild.textContent = isOn ? ' Encendida' : ' Apagada';
+        }
+      });
+    }
+    async function refreshTowerStates() {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/status');
+        if (response.ok) paintTowerStates((await response.json()).states);
+      } catch (_) { /* El simulador puede estar apagado al abrir el panel. */ }
+    }
+    refreshTowerStates();
+    document.querySelectorAll('.control-form, .pump-form').forEach(form => form.addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = event.submitter;
+      if (!button) return;
+      if (button.value === 'OFF' && !window.confirm('¿Confirmas que deseas apagar este equipo?')) return;
+      if (!button.dataset.originalHtml) button.dataset.originalHtml = button.innerHTML;
+      button.classList.add('sending'); button.setAttribute('aria-busy', 'true'); button.textContent = 'Enviando…';
+      try {
+        const body = new URLSearchParams(new FormData(form));
+        body.append(button.name, button.value);
+        const response = await fetch(form.action, {method:'POST', body});
+        if (!response.ok) throw new Error('Respuesta del simulador: ' + response.status);
+        const result = await response.json();
+        paintTowerStates(result.states);
+      } catch (error) {
+        const toast = document.getElementById('toast');
+        toast.textContent = 'No se pudo contactar al simulador. Comprueba que esté en ejecución.';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3500);
+      } finally {
+        button.innerHTML = button.dataset.originalHtml;
+        button.classList.remove('sending'); button.removeAttribute('aria-busy');
+      }
+    }));
+    document.querySelectorAll('.control-form input, .pump-form input').forEach(input => input.addEventListener('input', () => input.classList.toggle('has-value', input.value.length > 0)));
+  </script>
+</body>
+</html>
