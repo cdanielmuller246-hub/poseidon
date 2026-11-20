@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Control de Relé Torre 1 by Dani Müller</title>
+	<link rel="stylesheet" href="styles_original.css">
+</head>
+<body>
+	<div class="titulo-container">
+		<h1>POSEIDON</h1>
+		<p style="color: white;">Control de luces y motores de APPSA.</p>
+	</div>
+	<div class="main-container">
+		<h2 id="luces">LUCES</h2>
+		<h2>TORRE 1</h2>
+		<br>
+		<form action="http://192.168.0.102" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command11" value="ON">Encender Torre 1</button>
+			<button type="submit" name="command10" value="OFF">Apagar Torre 1</button>
+		</form>
+		<br>
+		<h2>TORRE 2</h2>
+		<br>
+		<form action="http://192.168.2.114" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command21" value="ON">Encender Torre 2</button>
+			<button type="submit" name="command20" value="OFF">Apagar Torre 2</button>
+		</form>
+		<br>
+		<h2>TORRE 3</h2>
+		<br>
+		<form action="http://192.168.2.114" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command31" value="ON">Encender Torre 3</button>
+			<button type="submit" name="command30" value="OFF">Apagar Torre 3</button>
+		</form>
+		<br>
+		<h2>TORRE 4</h2>
+		<br>
+		<form action="http://192.168.2.114" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command41" value="ON">Encender Torre 4</button>
+			<button type="submit" name="command40" value="OFF">Apagar Torre 4</button>
+		</form>
+	</div>
+	<div class="main-container">
+		<h2 id="luces">BOMBAS DE AGUA</h2>
+		<h2>TANQUE DE AGUA</h2>
+		<br>
+		<form action="http://192.168.2.114" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command51" value="ON">Encender Bomba</button>
+			<button type="submit" name="command50" value="OFF">Apagar Bomba</button>
+		</form>
+		<br>
+		<h2>AGUA A BARCO</h2>
+		<br>
+		<form action="http://192.168.2.114" method="POST">
+			<input type="password" name="password" placeholder="password">
+			<button type="submit" name="command61" value="ON">Encender Bomba</button>
+			<button type="submit" name="command60" value="OFF">Apagar Bomba</button>
+		</form>
+	</div>
+</body>
+</html>
