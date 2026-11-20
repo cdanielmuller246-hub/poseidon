@@ -51,3 +51,14 @@
 @media(max-width:600px){.port-tower{height:155px}.tower-one{left:3%;height:155px}.tower-two{left:calc(34.3333% - 10px);height:155px}.tower-three{left:calc(65.6667% - 20px);right:auto;height:155px}.tower-four{right:3%;height:155px}}
 .pump-symbol svg{width:34px;height:34px;fill:none;stroke:var(--cyan);stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 3px rgba(81,216,203,.18))}
 .pump-symbol svg .pump-accent{stroke:var(--amber);stroke-width:1.7}
+@media(max-width:600px){
+  .hero{height:370px;padding-top:38px}
+  .hero-art{top:60%;bottom:auto;height:40%;width:100%;opacity:.54}
+  .port-tower{height:94px;bottom:44px}
+  .tower-one{left:3%;height:94px}
+  .tower-two{left:calc(34.3333% - 10px);height:94px}
+  .tower-three{left:calc(65.6667% - 20px);right:auto;height:94px}
+  .tower-four{right:3%;height:94px}
+  .horizon{bottom:44px}
+  .waterline{height:44px}
+}
